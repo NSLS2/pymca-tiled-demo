@@ -1,0 +1,22 @@
+bmm:
+  uri: https://tiled.nsls2.bnl.gov/api/v1/metadata/bmm/raw
+chx:
+  uri: https://tiled.nsls2.bnl.gov/api/v1/metadata/chx/raw
+arpes:
+  uri: https://tiled.nsls2.bnl.gov/api/v1/metadata/arpes/raw
+haxpes:
+  uri: https://tiled.nsls2.bnl.gov/api/v1/metadata/haxpes/raw
+hex:
+  uri: https://tiled.nsls2.bnl.gov/api/v1/metadata/hex/raw
+nexafs:
+  uri: https://tiled.nsls2.bnl.gov/api/v1/metadata/ucal/raw
+pdf:
+  uri: https://tiled.nsls2.bnl.gov/api/v1/metadata/pdf/raw
+six:
+  uri: https://tiled.nsls2.bnl.gov/api/v1/metadata/six/raw
+srx:
+  uri: https://tiled.nsls2.bnl.gov/api/v1/metadata/srx/raw
+rsoxs:
+  uri: https://tiled.nsls2.bnl.gov/api/v1/metadata/rsoxs/raw
+xpd:
+  uri: https://tiled.nsls2.bnl.gov/api/v1/metadata/xpd/raw

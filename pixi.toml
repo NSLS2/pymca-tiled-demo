@@ -1,0 +1,37 @@
+[workspace]
+name = "pymca-tiled-demo"
+authors = ["Padraic Shafer <pshafer@bnl.gov>"]
+description = "NSLS-II development branch for PyMca-Tiled"
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-arm64", "win-64"]
+version = "0.1.0"
+
+[build-dependencies]
+numpy = "<2"
+
+[dependencies]
+python = ">=3.12.12,<3.13"
+
+[pypi-dependencies]
+bluesky-tiled-plugins = ">=2.0.0b64, <3"
+numpy = "<2"
+pydantic = ">=2.7"
+pymca5 = { git = "https://github.com/nsls2/pymca", branch = "milestone-1" }
+pyqt5 = ">=5.15.11, <6"
+qtconsole = ">=5.6.1, <6"
+tiled = { version = ">=0.2.3, <0.3", extras = ["client"] }
+yq = ">=3.4.3, <4"
+
+[tasks]
+init = "chmod u+x $PIXI_PROJECT_ROOT/scripts/pymca-tiled.sh"
+start = {cmd = "$PIXI_PROJECT_ROOT/scripts/pymca-tiled.sh", depends-on = ["init"]}
+
+[tasks.pymca]
+args = [
+    {arg = "profile", default = "default"},  # Tiled profile to load.
+]
+cmd = [
+    "TILED_PROFILE={{ profile }}",
+    "$PIXI_PROJECT_ROOT/scripts/pymca-tiled.sh",
+]
+depends-on = ["init"]
