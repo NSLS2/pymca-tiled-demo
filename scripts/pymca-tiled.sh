@@ -42,4 +42,4 @@ if [[ "$TILED_DEFAULT_URL" == 'null' ]]; then
 fi
 
 echo "${CYAN}Launching PyMca. This may take a few moments...${RESET}"
-TILED_PROFILE="$TILED_PROFILE" TILED_DEFAULT_URL="$TILED_DEFAULT_URL" pymca
+TILED_PROFILE="$TILED_PROFILE" TILED_DEFAULT_URL="$TILED_DEFAULT_URL" pymca "$@"
