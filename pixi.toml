@@ -43,6 +43,14 @@ args = [
 cmd = [
     "TILED_PROFILE={{ profile }}",
     "$PIXI_PROJECT_ROOT/scripts/pymca-tiled.sh",
-    "--debug=true"
+    "--debug=true",
 ]
 depends-on = ["init"]
+
+[tasks.profiles]
+cmd = [
+    "TILED_SITE_PROFILES=$PIXI_PROJECT_ROOT/profiles",
+    "tiled",
+    "profile",
+    "list",
+]

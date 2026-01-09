@@ -49,6 +49,14 @@ pixi run pymca chx
 Click the Bluesky logo button on the data source selector panel to connect to
 the tiled server and automatically load Bluesky runs from the CHX beamline.
 
+### Available Tiled profiles
+
+See a list of Tiled profiles that are available by running a pixi task.
+
+```shell
+pixi run profiles
+```
+
 
 ## Verbose logging in debug mode
 
