@@ -1,7 +1,7 @@
 # PyMca with Tiled
 
 This project demonstrates how to use PyMca with an existing Tiled server.
-It uses a fork of the PyMca project and the public NSLS-II Tiled server.
+It uses a fork of the PyMca project and two public NSLS-II Tiled servers.
 
 
 ## Getting started
@@ -25,7 +25,7 @@ An example at NSLS-II is "cms/raw".
 Click "Open" to load the list of Bluesky runs in that catalog.
 
 Select a run from the table and click "Import Data".
-The data channels from the "primary" stram of that run will be listed in the
+The data channels from the "primary" stream of that run will be listed in the
 lower table.
 
 Select one channel as an "X" axis and one or more channels as "Y" axes, then
@@ -55,6 +55,18 @@ See a list of Tiled profiles that are available by running a pixi task.
 
 ```shell
 pixi run profiles
+```
+
+
+## Launch with the public Tiled demo server
+
+A collection of example data is hosted as a public Tiled demonstration at
+<https://tiled-demo.nsls2.bnl.gov>.
+
+Launch PyMca and connect to the demo server using pixi.
+
+```shell
+pixi run demo
 ```
 
 

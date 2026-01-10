@@ -23,6 +23,7 @@ tiled = { version = ">=0.2.3, <0.3", extras = ["client"] }
 yq = ">=3.4.3, <4"
 
 [tasks]
+demo = "TILED_SITE_PROFILES=$PIXI_PROJECT_ROOT/profiles TILED_PROFILE=demo pymca"
 init = "chmod u+x $PIXI_PROJECT_ROOT/scripts/pymca-tiled.sh"
 start = {cmd = "$PIXI_PROJECT_ROOT/scripts/pymca-tiled.sh", depends-on = ["init"]}
 
