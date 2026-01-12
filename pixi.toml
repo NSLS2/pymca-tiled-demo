@@ -13,7 +13,7 @@ numpy = "<2"
 python = ">=3.12.12,<3.13"
 
 [pypi-dependencies]
-bluesky-tiled-plugins = ">=2.0.0b64, <3"
+bluesky-tiled-plugins = ">=2.0.0, <3"
 numpy = "<2"
 pydantic = ">=2.7"
 pymca5 = { git = "https://github.com/nsls2/pymca", branch = "milestone-1" }
